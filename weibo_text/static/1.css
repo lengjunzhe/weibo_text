@@ -1,0 +1,36 @@
+#container {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    font-size: 1px;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+.box, .invisible {
+    width: 200px;
+    height: auto ;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    font-size: medium;
+   border-top: 1px solid #ccc;
+border-right: 1px solid #666;
+border-bottom: 2px solid #999;
+border-left: 1px solid #ccc;
+padding: 1px;
+background: #f0f0f0;
+margin-right: 50px;
+-webkit-box-shadow: 2px -3px 35px 13px rgba(148,129,148,1);
+-moz-box-shadow: 2px -3px 35px 13px rgba(148,129,148,1);
+box-shadow: 2px -3px 35px 13px rgba(148,129,148,1);
+background-color: rgb(102, 204, 255);
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+

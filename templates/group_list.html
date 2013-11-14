@@ -1,0 +1,135 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+   <link rel="stylesheet" type="text/css" href="/static/1.css" />
+    <title>Weibo</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+ <script type="text/javascript">
+
+function isfollow(id){
+
+    $.ajax({
+
+        url: "https://api.weibo.com/2/friendships/show.json",
+        type: "GET",
+        dataType: "jsonp",
+        data: {
+            access_token:"{{access_token}}",
+            target_id: id,
+        },
+        success: function(data) {
+        //$("#"+id).append("<br/> id:" + id +  "<br/>");
+        //$("#"+id).append("<br/> by:" +data.data.target.followed_by+  "<br/>");
+        //$("#"+id).append("<br/> following:" +data.data.target.following+  "<hr>");
+        
+        if (data.data.target.followed_by == true){
+                $("#"+id).append("<br>已关注该用户</br>");
+        }
+        else if(data.data.target.followed_by == false){
+                $("#"+id).append("<p id=follow_"+id+"><a href='./" +data.data.target.id+ "'>关注该用户</a></p>");
+        }
+        }
+    })
+
+
+}
+
+
+function getinfo(id){
+
+    $.ajax({
+
+        url: "https://api.weibo.com/2/users/show.json",
+        type: "GET",
+        dataType: "jsonp",
+        data: {
+            access_token:"{{access_token}}",
+            uid: id,
+        },
+        success: function(data) {
+//      $("body").append("<div style=\"border:1px solid #00F;width:248px;high:118px;background-color:rgb(212, 247, 242);\" id="+id+"></div>");
+        $("body").append('<div class=\"box\" id='+id+'></div>');
+        $("#"+id).append("名字:<a href='http://weibo.com/u/"+data.data.id+"'>" +data.data.screen_name+  "</a>");
+        $("#"+id).append("<br/> 位置:" +data.data.location+  "<br />");
+        $("#"+id).append("<br/> 粉丝数:" +data.data.followers_count+  "<br/>");
+        isfollow(id);
+        }
+    })
+                
+}
+
+
+function follow_byid(id){
+         $.ajax({
+
+                url: "/login/user1.html/follow_byid",
+                type: "GET",
+                dataType: "json",
+                data:{
+                        uid:id,
+                },
+                success: function(data) {
+                        $("#follow_"+id+"").html("<p>关注成功</p>");
+                },
+    	})
+        
+}
+function group_append(){
+	$.ajax({
+                url:"append/",
+                type:"GET",
+                dataType:"json",
+                data:{
+                        gid:{{group_id}},
+                },
+
+		})
+}
+
+function group_join(){
+
+	$.ajax({
+                url:"append/",
+                type:"GET",
+                dataType:"json",
+                data:{
+                        gid:{{group_id}},
+                },
+		success: function(data) {
+
+			if (data.code==0)	
+			{
+				getinfo({{myid}})
+				{%for n in l%}
+                        	follow_byid({{n}});
+                		{% endfor %}
+			}
+			if (data.code == 1)
+			{
+				alert("您已经加入了该组");
+			}
+		},
+       })
+
+		
+}
+{%for m in l%}
+	getinfo({{m}});
+{% endfor %}
+
+ </script>
+</head>
+
+<body>
+    <div id="jsWeibo"></div>
+名称：{{name}}<br>
+创建人：{{master}}<br>
+分类：{{fication}}<br>
+简介：{{introduce}}<br>
+人数：{{content}}/{{max_content}}<br>
+创建时间：{{Create_time| date:'Y-m-d H:i'}}<br>
+小组成员：<hr>
+<button onclick="group_join();"> 加入该组</a></button>
+</body>
+</html>
+

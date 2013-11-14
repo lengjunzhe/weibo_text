@@ -1,0 +1,9 @@
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+{% for n in q %}
+小组名称:<a href="./{{n.id}}">{{n.name}}</a><br>
+创建人：{{n.master}}<br>
+分类：{{n.get_fication_display}}<hr>
+{% endfor %}
+
+</html>

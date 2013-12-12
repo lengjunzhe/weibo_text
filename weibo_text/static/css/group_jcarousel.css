@@ -1,0 +1,121 @@
+.jcarousel-skin-tango .jcarousel-container {
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    
+}
+
+.jcarousel-skin-tango .jcarousel-container-vertical {
+    width: 75px;
+    height: 245px;
+    padding: 40px 20px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  1000px;
+    height: 477px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-vertical {
+    width:  75px;
+    height: 245px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    position:relative;
+	width: 1000px;
+    height: 477px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/* ____________________ Buttons ____________________ */
+
+#jcarousel .jcarousel-prev,
+#jcarousel .jcarousel-next {
+  cursor:pointer;
+  position: absolute;
+  top: 50%;
+  margin-top:-40px;
+  width: 81px;
+  height: 81px;
+  outline:none;
+}
+#jcarousel .jcarousel-next {
+	background:url(../images/carousel_arrows.png) no-repeat #cfcfcf;
+	background-position:-81px 0;
+	right:0;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+#jcarousel .jcarousel-prev {
+	background:url(../images/carousel_arrows.png) no-repeat #cfcfcf;
+	background-position:0 0;
+	left:0;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+#jcarousel .jcarousel-next:hover {
+	background:url(../images/carousel_arrows.png) no-repeat #919191;
+	background-position:-81px 0;
+}
+#jcarousel .jcarousel-prev:hover {
+	background:url(../images/carousel_arrows.png) no-repeat #919191;
+}
+
+iframe#jcarousel_video {
+	position:absolute;
+	width:601px;
+	height:370px;
+	top:26px;
+	left:201px;
+	z-index:1 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

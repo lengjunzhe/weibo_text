@@ -1,0 +1,277 @@
+/* Computer */
+.grid_1 { width: 6.5%; } 
+.grid_2 { width: 15%; } 
+.grid_3 { width: 23.5%; } 
+.grid_4 { width: 32%; } 
+.grid_5 { width: 40.5%; }
+.grid_6 { width: 49%; } 
+.grid_7 { width: 57.5%; } 
+.grid_8 { width: 66%; } 
+.grid_9 { width: 74.5%; } 
+.grid_10 { width: 83%; } 
+.grid_11 { width: 91.5%; } 
+.grid_12 { width: 100%; } 
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	margin: 0 20px 20px 0;
+	float: left;
+	display: block;
+}
+
+.alpha			{margin-left:0;}
+.omega			{margin-right:0;}
+.gallery-list 	{margin:0;padding:0;}
+.little_respond {display:none;}
+
+.container{
+	width: 1000px;
+	max-width: 1000px;
+	margin: auto;
+	
+}
+
+
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{position:relative;z-index:99;clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
+@media screen and (max-width : 1024px) {
+	.circle_img {display:none;}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+	#logo {width:270px;}
+	
+	h4 {font-size:28px;padding-bottom:15px;}
+	
+	
+	#slide1 h2 {font-size:40px;line-height:40px;}
+	#slide1 h3 {font-size:38px;line-height:45px;}
+	#slide1 span {padding:0 20px;font-size:20px;}
+	
+	.bride_foto {width:135px;}
+	.about_block p {padding:0;}
+	
+	.h1_viva {line-height:30px;}
+	
+	.padding_slide1 {padding:150px 0 30px;}
+	
+	.apndks {left:319px;}
+	.apndks_2 {right:319px;}
+	
+	.drop, .drop2 {width:217px;}
+	.drop li, .drop2 li {padding:8px 15px 8px 19px;}
+
+/* ___________ SERV_BLOCK __________ */
+	
+	
+/* __________ //SERV_BLOCK _________ */
+
+/* _____________ menu ______________ */
+	.navigation li {margin-left:20px;}
+/* ____________ //menu _____________ */
+	
+	.container { width: 724px; }
+	.container .alpha        { margin-left: 0; margin-right: 5px; }
+	.container .omega        { margin-right: 0; }
+	.container .respond_pad {padding-right:20px;}
+	
+	.grid_3			{ width: 166px; }
+	.grid_4			{ width: 228px; }
+	.grid_5      		{ width: 290px; }
+	.grid_6      		{ width: 352px; }
+	.grid_7   		{ width: 414px; }
+	.grid_8   		{ width: 475px; }
+	.grid_9			{ width: 538px; }
+	.grid_12		{ width: 724px; }
+}
+
+@media only screen and (max-width: 766px) {
+	.menu {height:116px !important;position:fixed;top:0;}
+	#undefined-sticky-wrapper {height:0 !important;}
+
+	.navigation li span {display:none;}
+	
+	.little_respond {display:block;}
+	.big_respond {display:none;}
+	
+	.dot_line_img, .apndks_2, .apndks {display:none;}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 766px) {
+	h4 {font-size:22px;padding-bottom:15px;}
+	
+	#logo {text-align:center;}
+	
+	.padding_slide1 {padding:188px 0 100px;}
+
+	#slide1 h1 {margin-top:120px;}
+	#slide1 h2 {font-size:24px;line-height:40px;}
+	#slide1 h3 {font-size:22px;line-height:35px;}
+	#slide1 span {display:block;padding:0 10px;font-size:20px;line-height:28px;}
+	
+	.about_block {padding:20px;}
+	.heart {display:none !important;}
+	.bride_foto {width:135px;}
+	.about_block p {padding:0;}
+	
+	.plan_block {margin-bottom:50px;}
+	.plan_foto, .plan_foto_2 {margin:0 0 30px 0;}
+	.plan_details {text-align:left;padding:0;}
+	.apndks {display:none;}
+	.dottd, .dottd_2 {left:0;top:-59px;}
+	.plan_details p {padding:0 0 5px 15px;}
+	.plan_details span {padding-left:15px;}
+	
+	.inpt_bl {width:100%;}
+	
+	#map_block {margin-left:30px;}
+
+
+/* _____________ menu ______________ */
+	#nav {margin:0;}
+	.navigation li {padding:10px 0 28px;margin-left:15px;}
+	ul.navigation {float:none;margin:0;}
+/* ____________ //menu _____________ */	
+
+	.container { width: 420px; }
+	
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {width:420px;}
+	
+	.fright{float:none;}
+	.fleft{float:none;}
+	
+}
+
+@media screen and (max-width : 479px) {	
+	.menu {height:130px;position:fixed;}
+	
+	#logo {text-align:center;}
+	
+	.padding_slide1 {padding:188px 0 60px;}
+
+	h4 {font-size:22px;line-height:26px;padding-bottom:15px;}
+	
+	#logo {text-align:center;}
+	
+	.padding_slide1 {padding:188px 0 100px;}
+
+	#slide1 h1 {margin-top:120px;padding-bottom:20px;font-size:60px;line-height:60px;}
+	#slide1 h2 {padding-bottom:20px;font-size:18px;line-height:24px;}
+	#slide1 h3 {font-size:30px;line-height:35px;padding-bottom:20px;}
+	#slide1 span {display:block;padding:0 10px;font-size:20px;line-height:28px;}
+	
+	.about_block {padding:20px;text-align:center;}
+	.heart {display:none !important;}
+	.bride_foto {width:135px;float:none;}
+	.about_block p {padding:0;}
+	
+	.plan_block {margin-bottom:50px;}
+	.plan_foto, .plan_foto_2 {margin:0 0 30px 0;padding:15px;}
+	.plan_details {text-align:left;padding:0;}
+	.apndks, .apndks_2, .dottd, .dottd_2 {display:none;}
+	.plan_details p {font-size:14px;padding-bottom:0;}
+	.plan_details img {margin:0 3px;}
+	
+	.inpt_bl {width:100%;}
+	
+	#map_block {margin-left:30px;}
+	
+
+/* ___________ SERV_BLOCK __________ */
+		
+/* __________ //SERV_BLOCK _________ */
+/* _____________ menu ______________ */
+	#nav {margin:0;}
+	.navigation li {padding:5px;font-size:14px;}
+/* ____________ //menu _____________ */	
+	.container { width: 300px; }
+
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		width:300px;
+	}
+	
+	.fright{float:none;}
+	.fleft{float:none;}
+
+}
+
+@media screen and (max-width : 399px) {
+	.navigation li {font-size:11px;margin-left:0;}
+	
+	
+	.gallery-list {width:270px;}
+	
+	
+	#map_block iframe {height:300px !important;}
+	
+	
+	.contact_btn {width:240px;font-size:16px;}
+	
+	
+	.container { width: 295px; }
+
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		width:295px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

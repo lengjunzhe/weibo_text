@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>Group</title>
+	<link type="text/javascript" rel="stylesheet" href="/static/css/group_css" >
+	<link type="text/javascript" rel="stylesheet" href="/static/css/group_grid.css" >
+	<link type="text/javascript" rel="stylesheet" href="/static/css/group_jcarousel.css" >
+	<link type="text/javascript" rel="stylesheet" href="/static/css/group_normalize.css" >
+	<link type="text/javascript" rel="stylesheet" href="/static/css/group_prettyPhoto.css" >
+	<link type="text/javascript" rel="stylesheet" href="/static/css/group_style.css" >
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="/static/js/group_jjquery.min.js"></script>
+	<script type="text/javascript" src="/static/js/group_jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/static/js/group_jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="/static/js/group_jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="/static/js/group_jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="/static/js/group_jquery.sticky.js"></script>
+	<script type="text/javascript" src="/static/js/group_js.js"></script>
+	<script type="text/javascript" src="/static/js/jgroup_waypoints.min.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.src.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#ajax-contact-form").submit(function() {
+				var str = $(this).serialize();		
+				$.ajax({
+					type: "POST",
+					url: "contact_form/contact_process.php",
+					data: str,
+					success: function(msg) {
+						// Message Sent - Show the 'Thank You' message and hide the form
+						if(msg == 'OK') {
+							result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+							$("#fields").hide();
+						} else {
+							result = msg;
+						}
+						$('#note').html(result);
+					}
+				});
+				return false;
+			});
+
+		});		
+	</script>
+	
+</head>
+
+<body>
+
+
+<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<div class="title">
+				<div class="left_bord2"></div>
+				<h1>小组信息</h1>
+				<div class="right_bord2"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="content">
+			<div class="grid_6">
+				<a href="javascript:void(0);" class="servc_block">
+					<div class="icon_h">
+						<img class="servc_icon" src="/static/images/group/icon1.png" alt="" />
+					</div>
+					<p>小组名称</p>
+					<span>分类，成员数</span>
+					<div class="clear"></div>
+				</a>
+			
+			</div>
+			<div class="grid_6 omega">
+				<a href="javascript:void(0);" class="servc_block">
+					<div class="icon_h">
+						<img class="servc_icon" src="/static/images/group/icon2.png" alt="" />
+					</div>
+					<p>小组名称</p>
+					<span>分类，成员数</span>
+					<div class="clear"></div>
+				</a>
+			
+			</div>
+			<div class="grid_6">
+				<a href="javascript:void(0);" class="servc_block">
+					<div class="icon_h">
+						<img class="servc_icon" src="/static/images/group/icon3.png" alt="" />
+					</div>
+					<p>小组名称</p>
+					<span>分类，成员数</span>
+					<div class="clear"></div>
+				</a>
+			
+			</div>
+			<div class="grid_6 omega">
+				<a href="javascript:void(0);" class="servc_block">
+					<div class="icon_h">
+						<img class="servc_icon" src="/static/images/group/icon4.png" alt="" />
+					</div>
+					<p>小组名称</p>
+					<span>分类，成员数</span>
+					<div class="clear"></div>
+				</a>
+			
+			</div>
+			<div class="clear"></div>
+		</div>
+	
+	</div>
+</div>
+</body>
+</html>

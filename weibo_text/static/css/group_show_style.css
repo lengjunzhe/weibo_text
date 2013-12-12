@@ -1,0 +1,778 @@
+/* Global */
+
+body {
+	font-family: 'Tahoma', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height:20px;
+	color: #959595;
+	background:url(../images/group_show/main_bg.jpg) repeat left top;
+	background-attachment: fixed;
+	overflow-x:hidden;
+	background-size: cover !important;
+	height:100%;
+	width:100%;
+}
+::selection {
+	background: #df4d58;
+	color:#fff;
+}
+::-moz-selection {
+	background: #df4d58; /* Firefox */
+	color:#fff;
+}
+img {
+	max-width: 100%;
+}
+a:link {
+	color: #df4d58;
+	text-decoration: none;
+}
+a:hover {
+	color:#df4d58;
+}
+a:visited {
+	color: #df4d58;
+	text-decoration: none;
+}
+
+.fright{float:right;
+}
+.fleft{float:left;
+}
+
+
+
+/* Navigation */
+#undefined-sticky-wrapper {position:relative;}
+.menu {
+	position:absolute;
+	bottom:90px;
+	width:100%;
+	height:76px;
+	background:#fff;
+	z-index:9999;
+	box-shadow:0 3px 2px rgba(0,0,0,0.25);
+}
+#logo {
+	margin-bottom:0;
+	margin-left:0;
+}
+
+#nav {
+	text-align: right;
+}
+.navigation{
+	float: right;
+	list-style: none;
+	margin: 0;
+}
+ul.navigation {
+	margin:0;
+	padding:0;
+}
+.navigation li{
+	float: left;
+	text-align:left;
+	padding:28px 0;
+	margin-left:30px;
+	text-transform:none;
+	background:none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	font-size:16px;
+	line-height:20px;
+	color:#9b9b9b;
+	transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	-webkit-transition: background 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out;
+}
+.navigation li:first-child{margin-left:0;}
+.navigation li:hover,
+.navigation .active {
+	cursor:pointer;
+	color:#df4d58;
+}
+
+
+
+/* General Slides */ 
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	position: relative;
+	padding:0;
+}
+h1 {
+	float:left;
+	margin:0 13px 40px 0;
+	padding:0 19px 0 0;
+	text-transform:uppercase;
+	text-align:left;
+	font-style:normal;
+	background:none;
+	border-right:1px solid #c2c2c2;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 76px;
+	line-height: 65px;
+	color:#3e3e3e;
+	font-weight: 700;
+}
+.h1_viva {
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	line-height:65px;
+	font-style:italic;
+	color:#6b6b6b;
+}
+
+h4 {
+	margin:0;
+	padding:0 0 33px 0;
+	text-transform:uppercase;
+	text-align:center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	font-size:35px;
+	font-style:normal;
+	line-height:40px;
+	color:#343434;
+}
+h5 {
+	margin:0;
+	padding:0 0 17px 0;
+	text-transform:none;
+	font-family: 'Open Sans', sans-serif;
+	font-style:normal;
+	font-weight:300;
+	font-size:24px;
+	line-height:20px;
+	color:#3e3e3e;
+}
+img.icon_img {
+	float:left;
+	margin-right:20px;
+	margin-top:20px;
+	margin-bottom:25px;
+}
+
+.effect_2 {
+	background:url(../images/effect_2.png) repeat left top;
+	position:relative;
+	top:0;
+	bottom:-57px;
+	height:100%;
+	z-index:999 !important;
+}
+
+/* ____________________________________ Slide 1 ____________________________________ */ 
+
+.padding_slide1 {padding:241px 0 101px 0;
+}
+
+
+
+#slide1{
+	background-image:none;
+	background-size: cover !important;
+	width:100%;
+	text-align:left;
+}
+
+.filtr_bg {text-align:center;
+}
+
+#slide1 h1 {
+	float:none;
+	border-right:none;
+	margin:0;
+	padding:0;
+	background:url(../images/join_bord.png) no-repeat top center;
+	text-align:center;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	line-height: 50px;
+	color:#df4d58;
+	font-weight:800;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.54);
+}
+#slide1 h2 {
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 35px;
+	line-height: 48px;
+	color:#df4d58;
+	font-weight: 800;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.54);
+}
+#slide1 h3 {
+	margin:0;
+	padding:0;
+	text-transform:none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 35px;
+	line-height: 50px;
+	color:#fff;
+	font-weight: 600;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.54);
+}
+#slide1 span {
+	margin:0;
+	padding:0 63px;
+	text-transform:uppercase;
+	background:#df4d58;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 27px;
+	line-height: 45px;
+	color:#fff;
+	font-weight: 600;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.54);
+}
+
+
+#slide1 .button_block {
+	display:inline-block;
+	margin:0 10px;
+}
+#slide1 .button_bg {
+	margin-bottom:-64px;
+	background:#000;
+	height:64px;
+	opacity:0.23;
+	filter: alpha(opacity=23);
+	border-radius:30px;
+}
+#slide1 .button {
+	position:relative;
+	z-index:10;
+	display:inline-block;
+	cursor:pointer;
+	margin:6px;
+	padding:17px 78px 16px 33px;
+	border:none;
+	text-transform:uppercase;
+	background:#df4d58;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+	line-height: 19px;
+	font-weight: 400;
+	color:#fff;
+	border-radius:30px;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+#slide1 .button span  {
+	position:absolute;
+	top:0;
+	right:0;
+	background:url(../images/button_down.png) no-repeat right;
+	background-position:0 -48px;
+	width:78px;
+	height:52px;
+	transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+}
+#slide1 .button:hover span {background-position:0 0;}
+
+
+
+
+
+/* ____________________________________ Slide 2 ____________________________________ */ 
+
+#slide2 {
+	padding:86px 0 69px;
+}
+
+.about_heart {position:relative;
+}
+.heart {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:20;
+}
+.about_block {
+	padding:33px 20px 30px 31px;
+	background:#fff;
+	border-radius:5px;
+}
+.about_block p {
+	padding:33px 0 0 0;
+}
+.bride_foto {
+	float:left;
+	border-radius:50%;
+	margin:0 18px 10px 0;
+}
+
+.icon_heart {
+	margin-top:12px;
+}
+
+/* ___________________________________ //Slide 2 ___________________________________ */ 
+
+
+
+
+
+
+
+
+
+
+
+/* ____________________________________ Slide 4 ____________________________________ */ 
+#slide4 {
+	padding:86px 0 69px;
+	margin:-130px 0 0 0;
+}
+
+.plan_block {
+	margin-bottom:97px;
+	padding:33px 20px 30px 31px;
+	background:#fff;
+	border-radius:10px;
+}
+.plan_block h4 {
+	padding-bottom:21px;
+}
+
+.dot_line_center {
+}
+.dot_line_img {
+	position:absolute;
+	left:50%;
+	top:300px;
+	bottom:0;
+	height:57%;
+	width:1px;
+	background:url(../images/dot_line_img_bg.png) repeat-y;
+}
+
+
+.apndks {
+	position:absolute;
+	left:457px;
+	top:42px;
+	width:13px;
+	height:15px;
+	background:url(../images/apndks.png) no-repeat;
+}
+.dottd {
+	position:absolute;
+	right:-45px;
+	top:45px;
+	width:9px;
+	height:9px;
+	background:url(../images/dottd.png) no-repeat;
+}
+
+.plan_foto {
+	position:relative;
+	margin-right:30px;
+	margin-bottom:20px;
+	padding:40px 30px 35px 30px;
+	background:#fff;
+	border-radius:10px;
+}
+
+.plan_details {
+	padding:37px 0 0 46px;
+}
+.plan_details p, .plan_details img {
+	display:inline-block;
+	color:#fefefe;
+	font-size:16px;
+	line-height:21px;
+	font-style:normal;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.54);
+}
+.plan_details img {
+	margin:0 13px -3px 23px;
+}
+.plan_details span {
+	display:block;
+	font-style:italic;
+	color:#5e5e5e;
+}
+
+
+.plan_foto_2 {
+	position:relative;
+	margin-left:30px;
+	margin-bottom:20px;
+	padding:40px 30px 35px 30px;
+	background:#fff;
+	border-radius:10px;
+}
+
+.apndks_2 {
+	position:absolute;
+	right:457px;
+	top:42px;
+	width:13px;
+	height:15px;
+	background:url(../images/apndks2.png) no-repeat;
+}
+.dottd_2 {
+	position:absolute;
+	left:-44px;
+	top:45px;
+	width:9px;
+	height:9px;
+	background:url(../images/dottd.png) no-repeat;
+}
+.left_det {
+	text-align:right;
+	padding:37px 46px 0 0;
+}
+
+
+/* ___________________________________ //Slide 4 ___________________________________ */
+
+
+
+
+/* ____________________________________ Slide 6 ____________________________________ */ 
+#slide6 {
+	padding:86px 0 69px;
+	margin:-130px 0 0 0;
+}
+
+#slide6 h4 {padding-bottom:18px;
+}
+
+#slide6 .rsvp_block {
+	padding:33px 20px 30px 31px;
+	background:#fff;
+	border-radius:5px;
+	text-align:center;
+}
+.rsvp_block p {text-align:left;}
+#slide6 .contact_form textarea {
+resize: none;
+margin-top: 0;
+height: auto;
+min-height: 164px;
+}
+
+/*____________________	Select _____________________*/
+a.slct, a.slct2, .name_form {
+	display: block;
+	border: 1px solid #cdcdcd;
+	background:url(../images/slct_bg.jpg) no-repeat right top;
+	width: 88%;
+	padding: 13px 15px 14px 19px;
+	color: #949494;
+	line-height:20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;	
+	text-align:left;
+}
+
+.name_form {
+	background:none;
+	height:20px;
+}
+
+.slct.active,
+.slct2.active {
+	border-bottom: none;
+}
+.drop,
+.drop2 {
+	margin: -1px 0 0 0;
+	padding: 0;
+	width: 293px;
+	border: 1px solid #cdcdcd;
+	border-top: none;
+	display: none;
+	position: absolute;
+	z-index:100;
+	background: #fff;
+}
+.drop li,
+.drop2 li {
+	list-style: none;
+	text-align:left;
+	border-top: 1px solid #cdcdcd;
+	cursor: pointer;
+	display: block;
+	color: #949494;
+	padding: 13px 15px 14px 19px;
+	background-position: 10px -119px;
+}
+.drop li:hover,
+.drop2 li:hover {
+	background-color: #e8e8e8;
+	color: #222;
+}
+
+.inpt_bl {
+	float:left;
+	width:31%;
+	margin:0 20px 20px 0;
+}
+
+.rsvp_block label {
+	display:block;
+	padding:0 0 15px 0;
+	text-transform:uppercase;
+	text-align:left;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	color:#343434;
+}
+
+.contact_btn {
+	border:none;
+	text-transform:uppercase;
+	margin:13px 4px 10px 0;
+	padding:13px 32px 13px 41px;
+	border-radius:30px;
+	font-size: 18px;
+	line-height: 20px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	text-align: center;
+	vertical-align: middle;
+	background:#df4d58;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.contact_btn:hover {
+	background:#cdcdcd;
+}
+
+
+/*____________________	//Select _____________________*/
+
+/* ___________________________________ //Slide 6 ___________________________________ */
+
+
+
+
+/* ____________________________________ Slide 8 ____________________________________ */ 
+
+#slide8 {
+	padding:86px 0 69px;
+	margin:-130px 0 0 0;
+}
+
+.gallery_block {
+	margin-bottom:32px;
+	padding:40px 20px 31px 20px;
+	background:#fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	text-align:center;
+}
+.img_block {
+	display:inline-block;
+	overflow:hidden;
+	margin:8px;
+	width:220px;
+	height:220px;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+}
+
+.circle_img {
+	position:absolute;
+	z-index:11;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+}
+
+.inset_shadow {
+	position:absolute;
+	z-index:10;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	box-shadow:0 0 4px rgba(255,255,255,1) inset;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+.hover_img:hover .inset_shadow {
+	box-shadow:0 0 200px rgba(255,255,255,1) inset;
+}
+
+/* _________________ PORTFOLIO ________________ */
+
+#slide8 .hover_img {
+	position:relative;
+	border-radius:50%;
+	overflow:hidden;
+}
+#slide8 .hover_img img.portf_img {border-radius:50%;
+}
+.item_description {
+	position:absolute;
+	top:15px;
+	left:13px;
+	height:121px;
+	width:163px;
+	padding:57px 15px 15px 15px;
+	background:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	text-align:center;
+	color:#343434;
+	opacity:0;
+	filter: alpha(opacity=0);
+	transform: scale(0);
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition-duration: 1.2s;
+     -moz-transition-duration: 1.2s;
+          transition-duration: 1.2s;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	z-index:20;
+}
+
+
+.item_description p {
+	padding:0 0 9px 0;
+	margin:0 0 13px;
+	border-bottom:1px dotted #cecece;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #df4d58;
+	line-height: 26px;
+	font-weight: 300;
+	text-transform:uppercase;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+.hover_img:hover .item_description {
+	opacity:1;
+	filter: alpha(opacity=100);
+	transform: scale(1);
+}
+
+/* ________________ //PORTFOLIO _______________ */
+
+/* ___________________________________ //Slide 8 ___________________________________ */ 
+
+
+
+
+
+
+
+
+
+
+/* ____________________________________ Slide 10 ____________________________________ */
+
+#slide10 {
+	padding:86px 0 0;
+	margin:-130px 0 0 0;
+}
+
+#slide10 .container {margin-bottom:80px;
+}
+
+.direction_block {
+	padding:33px 0 30px 0;
+	background:#fff;
+	border-radius:5px;
+}
+.address_block {
+	padding:0 30px 0 30px;
+}
+.map_pin2 {
+	margin:0 25px -2px 0;
+}
+
+/* ____________________________________ //Slide 10 ____________________________________ */
+
+/* ____________________________________ FOOTER ____________________________________ */
+#footer {
+	background:#343434;
+	padding:27px 0 250px 0;
+}
+.copyright {
+	float:left;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	color:#979797;
+}
+.copyright a {
+	color:#df4d58;
+}
+.copyright a:hover {text-decoration:none;color:#fff;
+}
+
+/* _____________ BACK_TOP ___________ */
+#back_top {
+	float:right;
+}
+#back_top a.button {
+	cursor:pointer;
+	position:relative;
+	z-index:300;
+	display:block;
+	background:url(../images/back_top_bg.png) no-repeat top right;
+	margin:0;
+	padding-right:20px;
+	width:93px;
+	height:20px;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	color:#979797;
+}
+#back_top a.button:hover {text-decoration:none;}
+/* ____________ //BACK_TOP __________ */
+
+/* ___________________________________ //FOOTER ___________________________________ */
+
+
+
+
+
+
+
+
+
+
+

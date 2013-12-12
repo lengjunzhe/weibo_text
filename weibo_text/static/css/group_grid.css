@@ -1,0 +1,317 @@
+/* Computer */
+.grid_1 { width: 6.5%; } 
+.grid_2 { width: 15%; } 
+.grid_3 { width: 23.5%; } 
+.grid_4 { width: 32%; } 
+.grid_5 { width: 40.5%; }
+.grid_6 { width: 49%; } 
+.grid_7 { width: 57.5%; } 
+.grid_8 { width: 66%; } 
+.grid_9 { width: 74.5%; } 
+.grid_10 { width: 83%; } 
+.grid_11 { width: 91.5%; } 
+.grid_12 { width: 100%; } 
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	margin: 0 20px 20px 0;
+	float: left;
+	display: block;
+}
+
+.alpha			{margin-left:0;}
+.omega			{margin-right:0;}
+.gallery-list 	{margin:0;padding:0;}
+.little_respond {display:none;}
+
+.container{
+	width: 1000px;
+	max-width: 1000px;
+	margin: auto;
+	
+}
+
+
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{position:relative;z-index:99;clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
+@media only screen and (max-width: 1024px) {
+	.slide{background-attachment: scroll;background-position:0 0 !important;
+	}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {	
+	.gallery-list .omega {margin-right:10px;}
+	
+	#slide1 h1 {font-size:44px;line-height:50px;}
+	.slogan_text {font-size:30px;}
+	.left_bord, .right_bord {width:80px;padding-bottom:9px;}
+	
+
+	.padding_slide1 {padding:150px 0 30px;}
+	
+	iframe#jcarousel_video {left:142px;height:270px;width:442px;}
+	
+	.slide_descr, .slide_descr2, .slide_descr3 {width:100%;}
+	
+	.left_bord2, .right_bord2 {display:none;}
+
+/* _______________ JCAROUSEL ________________ */
+	.jcarousel-skin-tango .jcarousel-clip-horizontal, .jcarousel-skin-tango .jcarousel-item {width:724px;height:346px;}
+/* ______________ //JCAROUSEL _______________ */
+	
+/* _______________ TEAM ________________ */	
+	.team_block {text-align:center;}
+	.team1, .team2, .team3 {margin-top:0;float:none;display:inline-block;}
+	.team_foto1, .team_foto2, .team_foto3 {width:108px;height:108px;}
+	.team1 p, .team2 p, .team3 p {font-size:25px;line-height:35px;padding:7px 0 0 0;}
+	
+	.team1 a.team_soc1, .team2 a.team_soc1, .team3 a.team_soc1 {left:15%;}
+	.team1 a.team_soc2, .team2 a.team_soc2, .team3 a.team_soc2 {right:15%;}
+	.team1 .team_contact, .team2 .team_contact, .team3 .team_contact {height:33px;width:33px;}
+	.team1 .team_contact_icon, .team2 .team_contact_icon, .team3 .team_contact_icon {margin-left:-15px;padding-top:1px;width:30px;height:30px;}
+	.team1 .team_contact:hover, .team2 .team_contact:hover, .team3 .team_contact:hover {width:80px;}
+	
+	.team1 .team_contact a, .team2 .team_contact a, .team3 .team_contact a {line-height:33px;font-size:14px;}
+/* ______________ //TEAM _______________ */	
+/* ___________ SERV_BLOCK __________ */
+	.servc_block p {font-size:28px;}
+	
+/* __________ //SERV_BLOCK _________ */
+
+/* _____________ menu ______________ */
+	.navigation li {margin-left:20px;}
+/* ____________ //menu _____________ */
+	
+	.container { width: 724px; }
+	.container .alpha        { margin-left: 0; margin-right: 5px; }
+	.container .omega        { margin-right: 0; }
+	.gallery-list .omega {margin-right:10px;}
+	.container .respond_pad {padding-right:20px;}
+	
+	.grid_3			{ width: 166px; }
+	.grid_4			{ width: 228px; }
+	.grid_5      		{ width: 290px; }
+	.grid_6      		{ width: 352px; }
+	.grid_7   		{ width: 414px; }
+	.grid_8   		{ width: 475px; }
+	.grid_9			{ width: 538px; }
+	.grid_12		{ width: 724px; }
+}
+
+@media only screen and (max-width: 766px) {
+/* _______ RESPONS_MENU _________ */
+	.btn_dropdown {display:block;		
+	}
+	ul.navigation li {float:none;padding:7px 10px 5px;margin-left:0;}
+	.navigation li:hover, .navigation .active {
+		background:none;
+		border-bottom:none;
+		color:#ff7d04;
+}
+	
+	.navigation {
+		display:none;
+		left:0;
+		top:7px;
+		width:140px;
+		background:#fff;
+		border-radius:5px;
+		box-shadow:0 0 4px #000;
+	}
+/* ______ //RESPONS_MENU ________ */
+
+	#jcarousel .jcarousel-prev, #jcarousel .jcarousel-next {margin-top:-20px; width: 40px; height:40px;}
+	#jcarousel .jcarousel-next {background:url(../images/carousel_arrows_small.png) no-repeat #cfcfcf; background-position:-40px 0;}
+	#jcarousel .jcarousel-prev {background:url(../images/carousel_arrows_small.png) no-repeat #cfcfcf;background-position:0 0;}
+	#jcarousel .jcarousel-next:hover {background:url(../images/carousel_arrows_small.png) no-repeat #919191;background-position:-40px 0;}
+	#jcarousel .jcarousel-prev:hover {background:url(../images/carousel_arrows_small.png) no-repeat #919191;}
+
+/* ______________ TEAM _____________ */
+	.team_block {text-align:center;}
+	.team1, .team2, .team3 {margin:0 0 15px 0;float:none;display:inline-block;min-height:320px;}
+	.team_foto1, .team_foto2, .team_foto3 {width:200px;height:200px;}
+	.team1 p, .team2 p, .team3 p {font-size:25px;line-height:35px;padding:0;}
+	
+	.team1 a.team_soc1, .team2 a.team_soc1, .team3 a.team_soc1 {left:31%;}
+	.team1 a.team_soc2, .team2 a.team_soc2, .team3 a.team_soc2 {right:31%;}
+	.team1 .team_contact, .team2 .team_contact, .team3 .team_contact {height:33px;width:33px;}
+	.team1 .team_contact_icon, .team2 .team_contact_icon, .team3 .team_contact_icon {margin-left:-15px;padding-top:1px;width:30px;height:30px;}
+	.team1 .team_contact:hover, .team2 .team_contact:hover, .team3 .team_contact:hover {width:110px;}
+	
+	.team1 .team_contact a, .team2 .team_contact a, .team3 .team_contact a {line-height:33px;font-size:14px;}
+/* _____________ //TEAM ____________ */
+
+
+	.inset_shadow {top:76px;bottom:0;}
+	
+	.padding_slide3, .padding_slide5, .padding_slide7, .padding_slide9 {padding:50px 0 45px;}
+	
+	.slide_descr, .slide_descr2, .slide_descr3 {width:100%;}
+	h3 {font-size:18px;line-height:24px;padding:20px 0;}
+
+	.left_bord2, .right_bord2 {display:none;}
+	
+	.menu {position:fixed;top:0;margin-top:0 !important;}
+	#undefined-sticky-wrapper {height:0 !important;}
+
+	.navigation li span {display:none;}
+	
+	.gallery-list .omega {margin-right:10px;}
+	
+}
+
+@media only screen and (min-width: 480px) and (max-width: 766px) {
+	h1 {font-size:46px;line-height:115px;padding-bottom:0;}
+	
+	#logo {text-align:center;}
+	
+	.padding_slide1 {padding:188px 0 100px;}
+
+	#slide1 h1 {font-size:26px;line-height:40px;}
+	.slogan_text {font-size:24px;padding-bottom:70px;}
+	.left_bord, .right_bord {display:none;}
+
+	
+	
+
+/* _____________ menu ______________ */	
+	#nav {margin:0;}
+
+/* ____________ //menu _____________ */	
+
+/* _______________ JCAROUSEL ________________ */
+	.jcarousel-skin-tango .jcarousel-clip-horizontal, .jcarousel-skin-tango .jcarousel-item {width:420px;height:201px;}
+	iframe#jcarousel_video {left:81px;top:5px;width:259px;height:170px;}
+/* ______________ //JCAROUSEL _______________ */
+
+	.container { width: 420px; }
+	
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {width:420px;}
+	
+	.fright{float:none;}
+	.fleft{float:none;}
+	
+}
+
+@media screen and (max-width : 479px) {	
+	h1 {font-size:30px;line-height:35px;padding-bottom:0;}
+	
+	
+	#logo {text-align:center;}
+	#logo img {width:130px;margin-top:10px;}
+	
+	
+	.padding_slide1 {padding:188px 0 100px;}
+
+	#slide1 h1 {margin-top:80px;padding-bottom:5px;font-size:30px;line-height:40px;}
+	.slogan_text {font-size:16px;padding-bottom:40px;}
+	.left_bord, .right_bord {display:none;}
+	
+	.servc_block a {padding:5px 0 10px;font-size:14px;}
+
+/* _______________ JCAROUSEL ________________ */
+	.jcarousel-skin-tango .jcarousel-clip-horizontal, .jcarousel-skin-tango .jcarousel-item {width:300px;height:143px;}
+	iframe#jcarousel_video {left:58px;top:9px;width:186px;height:120px;}
+/* ______________ //JCAROUSEL _______________ */
+
+/* ___________ SERV_BLOCK __________ */
+	.servc_block p {font-size:22px;}
+	a.servc_block {height:150px;}
+		
+/* __________ //SERV_BLOCK _________ */
+/* _____________ menu ______________ */
+	.menu {position:fixed;}
+	
+	#nav {margin:0;}
+	.navigation li {padding:15px 0 17px;font-size:12px;margin-left:10px;}
+/* ____________ //menu _____________ */	
+	.container { width: 300px; }
+
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		width:300px;
+	}
+	
+	.fright{float:none;}
+	.fleft{float:none;}
+
+}
+
+@media screen and (max-width : 399px) {	
+	.btn_dropdown {margin-right:3px;}
+	
+	
+	.gallery-list {width:270px;margin-left:15px !important;}
+	
+	
+	#map_block iframe {height:300px !important;}
+	
+	
+	.contact_form input[type="text"], .contact_form textarea {width:88%;}
+	
+	
+	.container { width: 295px; }
+
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		width:295px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,10 +1,109 @@
+<!DOCTYPE HTML>
 <html>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>Index</title>
 
-你的ID：{{uid}}</p>
 
-欢迎：{{user_name}}</p>
-你最近发的微博：{{weibo_last}}</p>
-{{r4}}</p>
-<a href='./user1.html'>用户信息</a>
+	<link type="text/javascript" rel="stylesheet" href="/static/css/group_show_style.css" >
+	<link type="text/javascript" rel="stylesheet" href="/static/css/group_show_normalize.css" >
+	<link type="text/javascript" rel="stylesheet" href="/static/css/group_show_grid.css" >
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,300' rel='stylesheet' type='text/css'>
+	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="/static/js/group_show_jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/static/js/group_show_jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="/static/js/group_show_jquery.sticky.js"></script>
+	<script type="text/javascript" src="/static/js/group_show_js.js"></script>
+	<script type="text/javascript" src="/static/js/group_show_waypoints.min.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.src.js"></script>
+		<style type="text/css">
+			.circle_img {display:none; }
+			#slide1 span {font-size:26px;}
+		</style>
+	<![endif]-->
+	
+</head>
+
+<body><div class="effect_2">
+
+
+
+
+<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+
+		<div id="content" class="grid_12">
+			<div class="filtr_bg">
+				<h1>C_粉丝团</h1>
+				<h2>您的微博互粉小助手</h2>
+				<h3>欢迎：{{user_name}}</h3>
+				<button><a href='/'>退出登录</a></button>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="menu">	
+	<div class="container clearfix">
+
+		<div id="logo" class="fleft">
+			<a href="index.html"><img src="/static/images/group_show/logo.png" /></a>
+		</div>
+		
+		<div id="nav" class="fright">
+			<ul class="navigation">
+				<li><a href='/'>主页</a></li>
+				<li><a href='/group'>创建群组</a></li>
+				<li><a href='/group/group_show'>群组信息</a></li>
+				<li data-slide="6">RSVP</li>
+				<li data-slide="8">Gallery</li>
+				<li data-slide="10">Direction</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="about_heart">
+			<img class="heart" src="/static/images/group_show/heart_2.png" />
+			<div class="grid_6">
+				<div class="about_block">
+					<h4>About Weibo</h4>
+					<img class="bride_foto" src="/static/images/group_show/bride_foto.jpg" alt="" />
+					<p>新浪微博是一款为大众提供娱乐休闲生活服务的信息分享和交流平台。新浪微博于2009年8月14日开始内测。9月25日，新浪微博正式添加了@功能以及私信功能，此外还提供“评论”和“转发”功能，供用户交流。</p>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="grid_6 omega">
+				<div class="about_block">
+					<h4>About C_粉丝团</h4>
+					<img class="bride_foto" src="/static/images/group_show/groom_foto.jpg" alt="" />
+					<p>C_粉丝团是一个新型的为广大草根微博账号服务的互粉，互推平台，它基于积分的方式，极大的提高了用户的积极性和互粉效果，有效的屏蔽了僵尸粉，使大家更开心有效的玩转微博</p>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+			<img class="icon_heart" src="/static/images/group_show/icon1.png" />
+		</div>
+		
+	</div>
+</div>
+</body>
 </html>
+

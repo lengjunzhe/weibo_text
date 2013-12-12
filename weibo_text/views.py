@@ -21,7 +21,7 @@ def weibo_login(request):#获取CODE
 	global key,secret,callback_url
 	client = APIClient(app_key=key,app_secret=secret,redirect_uri=callback_url)
 	url = client.get_authorize_url()
-	return render_to_response('lgoin.html',{'url':url})
+	return render_to_response('index_1.html',{'url':url})
 
 def weibo_login2(request):
 	global key,secret,callback_url
@@ -132,7 +132,7 @@ def follow_byid(request):#互相关注
 
 def group_found(request):
 	f = Group_f()
-	return render_to_response('group.html', {'f': f},context_instance=RequestContext(request))
+	return render_to_response('group(1).html', {'f': f},context_instance=RequestContext(request))
 
 def group_show(request):
 	global key,secret,callback_url,l
@@ -143,15 +143,19 @@ def group_show(request):
         r = client.statuses.user_timeline.get()
 	if request.method == 'POST':
 		try:
-			Group.objects.get(name=request.POST['name'])
+			Group.objects.get(name=request.POST['text'])
 		except:
-                	q = Group(name=request.POST['name'],master=r.statuses[0]['user']['screen_name'],fication=request.POST['fication'],introduce=request.POST['introduce'],max_content=request.POST['max_content'],Create_time=datetime.now())
+                	q = Group(name=request.POST['text'],master=r.statuses[0]['user']['screen_name'],fication=request.POST['fication'],introduce=request.POST['message'],max_content=request.POST['max_content'],Create_time=datetime.now())
                 	q.save()
                		p = G_u(gid=q.id,uid=r.statuses[0]['user']['id'])
                 	p.save()
 			return HttpResponseRedirect("/group/group_show/")
 	q = Group.objects.all()
-	return render_to_response('group_show.html', {'q': q})
+	q = list(q)
+	q12 =[]
+	for i in range(0,len(q),2):
+		q12.append(q[i:i+2])
+	return render_to_response('group_show_2.html', {'q12':q12})
 
 def group_list(request,gid):
 	g_l = []
@@ -177,7 +181,7 @@ def group_list(request,gid):
 	content = group_content(gid)
 	max_content = q.get_max_content_display()
 	Create_time = q.Create_time
-	return render_to_response('group_list.html',{'l':g_l,'name':name,'master':master,'introduce':introduce,'fication':fication,'content':content,'max_content':max_content,'Create_time':Create_time,'access_token':access_token,'g_content':g_content,'group_id':gid,'myid':s.uid})
+	return render_to_response('group_show_1.html',{'l':g_l,'name':name,'master':master,'introduce':introduce,'fication':fication,'content':content,'max_content':max_content,'Create_time':Create_time,'access_token':access_token,'g_content':g_content,'group_id':gid,'myid':s.uid})
 
 def group_append(request,gid):
         access_token = request.session['access_token']
